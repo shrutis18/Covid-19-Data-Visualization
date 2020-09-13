@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class = "top">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for ('static', filename='app.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head> 
+<body scroll="no" style="overflow: hidden">
+<div style="background-color: light-grey; height: 900px; width: 1440px;">
+    <select id="selectBox" class= "select-css" onchange="selectCountry(this.value);">
+     </select>
+     <div class="row">
+      <div class=" col-md-6 section-one">
+        <select id="selectBox" class= "" onchange="selectMobilityFactor(this.value);">
+          <option>Retail</option>
+          <option>Grocery</option>
+          <option>Parks</option>
+          <option>Transit</option>
+          <option>Workplaces</option>
+          <option>Residential</option>
+        </select>
+      </div>
+      <div class="col-md-6 section-two">
+        
+      </div>
+      <div class=" col-md-8 section-three">
+        
+      </div>
+      <div class="col-md-4 section-four">
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src = "{{ url_for('static', filename='app.js')}}"></script>
+</body>
+</html>
